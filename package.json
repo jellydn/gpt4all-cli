@@ -21,7 +21,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "bin": {
-    "gpt4all": "./dist/index.cjs"
+    "gpt4all": "./dist/index.js"
   },
   "files": [
     "/src",
