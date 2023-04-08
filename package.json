@@ -34,14 +34,14 @@
   },
   "dependencies": {
     "consola": "3.0.0-3",
-    "gpt4all": "^1.0.0",
-    "ora": "^6.3.0"
+    "gpt4all": "1.0.0",
+    "ora": "6.3.0"
   },
   "devDependencies": {
-    "@skypack/package-check": "^0.2.2",
-    "@types/node": "^18.15.11",
-    "tsup": "^6.7.0",
-    "tsx": "^3.12.6",
-    "typescript": "^5.0.4"
+    "@skypack/package-check": "0.2.2",
+    "@types/node": "18.15.11",
+    "tsup": "6.7.0",
+    "tsx": "3.12.6",
+    "typescript": "5.0.4"
   }
 }

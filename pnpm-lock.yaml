@@ -5,27 +5,27 @@ dependencies:
     specifier: 3.0.0-3
     version: 3.0.0-3
   gpt4all:
-    specifier: ^1.0.0
+    specifier: 1.0.0
     version: 1.0.0
   ora:
-    specifier: ^6.3.0
+    specifier: 6.3.0
     version: 6.3.0
 
 devDependencies:
   '@skypack/package-check':
-    specifier: ^0.2.2
+    specifier: 0.2.2
     version: 0.2.2
   '@types/node':
-    specifier: ^18.15.11
+    specifier: 18.15.11
     version: 18.15.11
   tsup:
-    specifier: ^6.7.0
+    specifier: 6.7.0
     version: 6.7.0(typescript@5.0.4)
   tsx:
-    specifier: ^3.12.6
+    specifier: 3.12.6
     version: 3.12.6
   typescript:
-    specifier: ^5.0.4
+    specifier: 5.0.4
     version: 5.0.4
 
 packages:
