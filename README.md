@@ -17,6 +17,9 @@ By utilizing GPT4All-CLI, developers can effortlessly tap into the power of GPT4
   npx gpt4all-cli@latest
 ```
 
+![https://gyazo.com/15617a4d46884092c0286ec6c0d014d9.gif](https://gyazo.com/15617a4d46884092c0286ec6c0d014d9.gif)
+![https://gyazo.com/3308c5da3ed189cc53f875cc5747d6be.gif](https://gyazo.com/3308c5da3ed189cc53f875cc5747d6be.gif)
+
 ## Author
 
 👤 **Dung Huynh**
