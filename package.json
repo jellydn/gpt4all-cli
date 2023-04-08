@@ -1,0 +1,18 @@
+{
+  "name": "gpt4all-cli",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "consola": "3.0.0-3",
+    "gpt4all": "^1.0.0",
+    "ora": "^6.3.0"
+  }
+}
