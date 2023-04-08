@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { GPT4All } from "gpt4all";
 import { consola } from "consola";
 import ora from "ora";

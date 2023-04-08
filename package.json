@@ -1,18 +1,47 @@
 {
   "name": "gpt4all-cli",
-  "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "dev": "tsx src/index.ts"
+  "version": "0.0.0",
+  "keywords": [
+    "gpt4all",
+    "gpt4all-cli",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jellydn/gpt4all-cli"
   },
-  "devDependencies": {
-    "@types/node": "^18.15.11",
-    "tsx": "^3.12.6",
-    "typescript": "^5.0.4"
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "bin": {
+    "gpt4all": "./dist/index.cjs"
+  },
+  "files": [
+    "/src",
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm",
+    "dev": "tsx src/index.ts",
+    "package-check": "package-check"
   },
   "dependencies": {
     "consola": "3.0.0-3",
     "gpt4all": "^1.0.0",
     "ora": "^6.3.0"
+  },
+  "devDependencies": {
+    "@skypack/package-check": "^0.2.2",
+    "@types/node": "^18.15.11",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.4"
   }
 }
