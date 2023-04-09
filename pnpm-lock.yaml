@@ -2,7 +2,7 @@ lockfileVersion: '6.0'
 
 dependencies:
   commander:
-    specifier: ^10.0.0
+    specifier: 10.0.0
     version: 10.0.0
   consola:
     specifier: 3.0.0-3

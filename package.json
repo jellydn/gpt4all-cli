@@ -33,7 +33,7 @@
     "package-check": "package-check"
   },
   "dependencies": {
-    "commander": "^10.0.0",
+    "commander": "10.0.0",
     "consola": "3.0.0-3",
     "gpt4all": "1.0.0",
     "ora": "6.3.0"
