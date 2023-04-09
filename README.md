@@ -24,6 +24,20 @@ By utilizing GPT4All-CLI, developers can effortlessly tap into the power of GPT4
 ```sh
   npx gpt4all-cli@latest
 ```
+### Display help for command
+
+```sh
+❯ npx gpt4all-cli@latest -h
+Usage: gpt4all [options]
+
+GPT4all CLI
+
+Options:
+  -V, --version        output the version number
+  -m, --model <value>  Choose a model (default: gpt4all-lora-quantized) (default: "")
+  -r, --reset          Reset the model by deleting the ~/.nomic folder (default: false)
+  -h, --help           Display help for command
+```
 
 ![https://gyazo.com/15617a4d46884092c0286ec6c0d014d9.gif](https://gyazo.com/15617a4d46884092c0286ec6c0d014d9.gif)
 ![https://gyazo.com/3308c5da3ed189cc53f875cc5747d6be.gif](https://gyazo.com/3308c5da3ed189cc53f875cc5747d6be.gif)
