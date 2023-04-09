@@ -3,6 +3,7 @@
   A CLI tool built on top of gpt4all-ts
 </p>
 
+[![IT Man - Tech #35 - Unlock the Power of AI: GPT4All #GPT-3.5-Turbo &amp; #LLaMa [Vietnamese]](https://i.ytimg.com/vi/EkpqKFewV2g/hqdefault.jpg)](https://www.youtube.com/watch?v=EkpqKFewV2g)
 ## Intro
 
 GPT4All-CLI is a robust command-line interface tool designed to harness the remarkable capabilities of GPT4All within the TypeScript ecosystem. It is constructed atop the [GPT4All-TS](https://github.com/nomic-ai/gpt4all-ts) library.
