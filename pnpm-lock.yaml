@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  commander:
+    specifier: ^10.0.0
+    version: 10.0.0
   consola:
     specifier: 3.0.0-3
     version: 3.0.0-3
@@ -421,6 +424,11 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: 1.0.0
+    dev: false
+
+  /commander@10.0.0:
+    resolution: {integrity: sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==}
+    engines: {node: '>=14'}
     dev: false
 
   /commander@4.1.1:

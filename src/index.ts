@@ -3,32 +3,59 @@
 import { GPT4All } from "gpt4all";
 import { consola } from "consola";
 import ora from "ora";
+import { Command } from "commander";
+import { version } from "../package.json";
 
-const main = async () => {
+// TODO: Add reset option to reset the model
+// TODO: Support more models (e.g. ggml-vicuna-7b-4bit), refer https://github.com/nomic-ai/gpt4all#gpt4all-compatibility-ecosystem
+const program = new Command();
+program
+  .version(version)
+  .description("GPT4all CLI")
+  .option(
+    "-m, --model <value>",
+    "Choose a model (default: gpt4all-lora-quantized)",
+    ""
+  )
+  .helpOption("-h, --help", "Display help for command");
+
+program.parse(process.argv);
+
+const main = async (): Promise<void> => {
   consola.info("Welcome to the GPT4all CLI!");
 
-  // Let user choose the model
-  const model = await consola.prompt(
-    "Choose a model (default: gpt4all-lora-quantized): ",
-    {
-      type: "select",
-      options: [
-        {
-          label: "gpt4all-lora-quantized",
-          value: "gpt4all-lora-quantized",
-          hint: "Default model",
-        },
-        {
-          label: "gpt4all-lora-unfiltered-quantized",
-          value: "gpt4all-lora-unfiltered-quantized",
-          hint: "Unfiltered model, may contain offensive content",
-        },
-      ],
-    }
-  );
+  // Validate model option
+  const options = program.opts();
+  let model = options.model;
+  if (model === "") {
+    model = await consola.prompt(
+      "Choose a model (default: gpt4all-lora-quantized): ",
+      {
+        type: "select",
+        options: [
+          {
+            label: "gpt4all-lora-quantized",
+            value: "gpt4all-lora-quantized",
+            hint: "Default model",
+          },
+          {
+            label: "gpt4all-lora-unfiltered-quantized",
+            value: "gpt4all-lora-unfiltered-quantized",
+            hint: "Unfiltered model, may contain offensive content",
+          },
+        ],
+      }
+    );
+  } else if (
+    model !== "gpt4all-lora-quantized" &&
+    model !== "gpt4all-lora-unfiltered-quantized"
+  ) {
+    consola.error(`Invalid model option: ${model}`);
+    process.exit(1);
+  }
 
   // Instantiate GPT4All with default or custom settings
-  const gpt4all = new GPT4All(model as any, true);
+  const gpt4all = new GPT4All(model, true);
   consola.start(`Initialize and download ${model} model if missing ...`);
   await gpt4all.init();
   await gpt4all.open();
@@ -37,13 +64,13 @@ const main = async () => {
   // Get input from user
   let prompt = "";
   while (prompt.toLowerCase() !== "exit" && prompt.toLowerCase() !== "quit") {
-    prompt = await consola.prompt(
+    prompt = (await consola.prompt(
       'Enter your prompt (or type "exit" or "quit" to finish): ',
       {
         type: "text",
         default: "exit",
       }
-    );
+    )) as string;
 
     if (prompt?.toLowerCase() !== "exit" && prompt?.toLowerCase() !== "quit") {
       // Show a loading spinner while generating the response
