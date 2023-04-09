@@ -1,9 +1,16 @@
 <h1 align="center">Welcome to gpt4all-cli 👋</h1>
+
+[![Version](https://img.shields.io/npm/v/gpt4all-cli.svg)](https://npmjs.org/package/gpt4all-cli)
+[![Downloads/week](https://img.shields.io/npm/dw/gpt4all-cli.svg)](https://npmjs.org/package/gpt4all-cli)
+[![License](https://img.shields.io/npm/l/gpt4all-cli.svg)](https://github.com/jellydn/gpt4all-cli/blob/master/package.json)![Prerequisite](https://img.shields.io/badge/node-%3E%3D16.0.0-blue.svg)
+[![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
+
 <p>
   A CLI tool built on top of gpt4all-ts
 </p>
 
-[![IT Man - Tech #35 - Unlock the Power of AI: GPT4All #GPT-3.5-Turbo &amp; #LLaMa [Vietnamese]](https://i.ytimg.com/vi/EkpqKFewV2g/hqdefault.jpg)](https://www.youtube.com/watch?v=EkpqKFewV2g)
+[![IT Man - Tech #35 - Unlock the Power of AI: GPT4All #GPT-3.5-Turbo & #LLaMa [Vietnamese]](https://i.ytimg.com/vi/EkpqKFewV2g/hqdefault.jpg)](https://www.youtube.com/watch?v=EkpqKFewV2g)
+
 ## Intro
 
 GPT4All-CLI is a robust command-line interface tool designed to harness the remarkable capabilities of GPT4All within the TypeScript ecosystem. It is constructed atop the [GPT4All-TS](https://github.com/nomic-ai/gpt4all-ts) library.
@@ -20,6 +27,11 @@ By utilizing GPT4All-CLI, developers can effortlessly tap into the power of GPT4
 
 ![https://gyazo.com/15617a4d46884092c0286ec6c0d014d9.gif](https://gyazo.com/15617a4d46884092c0286ec6c0d014d9.gif)
 ![https://gyazo.com/3308c5da3ed189cc53f875cc5747d6be.gif](https://gyazo.com/3308c5da3ed189cc53f875cc5747d6be.gif)
+
+## Learning Resources
+
+- [Using langchain To Run Queries Against GPT4All in the Context of a Single Documentary Knowledge Source – OUseful.Info, the blog…](https://blog.ouseful.info/2023/04/04/langchain-query-gpt4all-against-knowledge-source/)
+- [Running GPT4All On a Mac Using Python langchain in a Jupyter Notebook – OUseful.Info, the blog…](https://blog.ouseful.info/2023/04/04/running-gpt4all-on-a-mac-using-python-langchain-in-a-jupyter-notebook/)
 
 ## Author
 
