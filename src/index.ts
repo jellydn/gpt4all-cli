@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-import { GPT4All } from "gpt4all";
 import { consola } from "consola";
 import ora from "ora";
 import { Command } from "commander";
-import { version } from "../package.json";
 import { join } from "path";
 import { homedir } from "os";
-import { reset } from "./utils";
 
-// TODO: Support more models (e.g. ggml-vicuna-7b-4bit), refer https://github.com/nomic-ai/gpt4all#gpt4all-compatibility-ecosystem
+import { reset } from "./utils";
+import { gptFactory } from "./lib/gpt-factory";
+import { version } from "../package.json";
+
 const program = new Command();
 program
   .version(version)
@@ -54,6 +54,10 @@ const main = async (): Promise<void> => {
   }
 
   let model = options.model;
+  const supportedModels = [
+    "gpt4all-lora-quantized",
+    "gpt4all-lora-unfiltered-quantized",
+  ];
   if (model === "") {
     model = await consola.prompt(
       "Choose a model (default: gpt4all-lora-quantized): ",
@@ -73,16 +77,13 @@ const main = async (): Promise<void> => {
         ],
       }
     );
-  } else if (
-    model !== "gpt4all-lora-quantized" &&
-    model !== "gpt4all-lora-unfiltered-quantized"
-  ) {
+  } else if (!supportedModels.includes(model)) {
     consola.error(`Invalid model option: ${model}`);
     process.exit(1);
   }
 
   // Instantiate GPT4All with default or custom settings
-  const gpt4all = new GPT4All(model, true);
+  const gpt4all = gptFactory(model, true);
   consola.start(`Initialize and download ${model} model if missing ...`);
   await gpt4all.init();
   await gpt4all.open();
