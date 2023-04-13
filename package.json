@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "commander": "10.0.0",
-    "consola": "3.0.1",
+    "consola": "3.0.2",
     "debug": "^4.3.4",
     "gpt4all": "github:jellydn/gpt4all-ts#feature/add-debug-flag",
     "ora": "6.3.0"
