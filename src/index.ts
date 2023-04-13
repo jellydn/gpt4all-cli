@@ -7,7 +7,7 @@ import { join } from "path";
 import { homedir } from "os";
 import debug from "debug";
 
-import { reset } from "./utils";
+import { formatCodeBlocks, reset } from "./utils";
 import { gptFactory } from "./lib/gpt-factory";
 import { version } from "../package.json";
 
@@ -111,7 +111,7 @@ const main = async (): Promise<void> => {
       const spinner = ora("Generating response...").start();
       const response = await gpt4all.prompt(prompt);
       spinner.stop();
-      consola.warn(response);
+      consola.warn(formatCodeBlocks(response));
     }
   }
 
