@@ -13,3 +13,13 @@ export function reset(nomicDir: string) {
     }
   });
 }
+
+// TODO: add unit test for format response
+/**
+ * codeFomatter.
+ *
+ * @param {string} content
+ */
+export function codeFomatter(content: string) {
+  return content.replace(/```/g, "``````");
+}

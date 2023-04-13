@@ -7,9 +7,12 @@ dependencies:
   consola:
     specifier: 3.0.1
     version: 3.0.1
+  debug:
+    specifier: ^4.3.4
+    version: 4.3.4
   gpt4all:
-    specifier: 1.0.0
-    version: 1.0.0
+    specifier: github:jellydn/gpt4all-ts#feature/add-debug-flag
+    version: github.com/jellydn/gpt4all-ts/d2f22dfbbb875f0a683f1d74636ac0cabffa17a8
   ora:
     specifier: 6.3.0
     version: 6.3.0
@@ -18,6 +21,9 @@ devDependencies:
   '@skypack/package-check':
     specifier: 0.2.2
     version: 0.2.2
+  '@types/debug':
+    specifier: ^4.1.7
+    version: 4.1.7
   '@types/node':
     specifier: 18.15.11
     version: 18.15.11
@@ -315,6 +321,16 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
+  /@types/debug@4.1.7:
+    resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
+    dependencies:
+      '@types/ms': 0.7.31
+    dev: true
+
+  /@types/ms@0.7.31:
+    resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
+    dev: true
+
   /@types/node@18.15.11:
     resolution: {integrity: sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==}
     dev: true
@@ -345,10 +361,10 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /axios@1.3.5:
+  /axios@1.3.5(debug@4.3.4):
     resolution: {integrity: sha512-glL/PvG/E+xCWwV8S6nCHcrfg1exGx7vxyUIivIA1iL7BIh6bePylCfVHwp6k13ao7SATxB6imau2kqY+I67kw==}
     dependencies:
-      follow-redirects: 1.15.2
+      follow-redirects: 1.15.2(debug@4.3.4)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -497,7 +513,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
-    dev: true
 
   /defaults@1.0.4:
     resolution: {integrity: sha512-eFuaLoy/Rxalv2kr+lqMlUnrDWV+3j4pljOIJgLIhI058IQfWJ7vXhyEIHu+HtC738klGALYxOKDO0bQP3tg8A==}
@@ -586,7 +601,7 @@ packages:
       to-regex-range: 5.0.1
     dev: true
 
-  /follow-redirects@1.15.2:
+  /follow-redirects@1.15.2(debug@4.3.4):
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -594,6 +609,8 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+    dependencies:
+      debug: 4.3.4
     dev: false
 
   /form-data@4.0.0:
@@ -655,16 +672,6 @@ packages:
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
-
-  /gpt4all@1.0.0:
-    resolution: {integrity: sha512-fpT5F2kMReP8bQmzdxhPX7Rx6HI2Gvn/T/JqjuDl/JEYoSQWZOINiYgV+lsZjyerst0bb4fU3Rs6BORNhDxz/g==}
-    dependencies:
-      os: 0.1.2
-      axios: 1.3.5
-      progress: 2.0.3
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /human-signals@2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
@@ -810,7 +817,6 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-    dev: true
 
   /mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
@@ -1188,3 +1194,16 @@ packages:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
     dev: true
+
+  github.com/jellydn/gpt4all-ts/d2f22dfbbb875f0a683f1d74636ac0cabffa17a8:
+    resolution: {tarball: https://codeload.github.com/jellydn/gpt4all-ts/tar.gz/d2f22dfbbb875f0a683f1d74636ac0cabffa17a8}
+    name: gpt4all
+    version: 1.0.0
+    dependencies:
+      os: 0.1.2
+      axios: 1.3.5(debug@4.3.4)
+      debug: 4.3.4
+      progress: 2.0.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false

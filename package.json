@@ -35,11 +35,13 @@
   "dependencies": {
     "commander": "10.0.0",
     "consola": "3.0.1",
-    "gpt4all": "1.0.0",
+    "debug": "^4.3.4",
+    "gpt4all": "github:jellydn/gpt4all-ts#feature/add-debug-flag",
     "ora": "6.3.0"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
+    "@types/debug": "^4.1.7",
     "@types/node": "18.15.11",
     "tsup": "6.7.0",
     "tsx": "3.12.6",

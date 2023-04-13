@@ -5,6 +5,7 @@ import ora from "ora";
 import { Command } from "commander";
 import { join } from "path";
 import { homedir } from "os";
+import debug from "debug";
 
 import { reset } from "./utils";
 import { gptFactory } from "./lib/gpt-factory";
@@ -24,6 +25,7 @@ program
     "Reset the model by deleting the ~/.nomic folder",
     false
   )
+  .option("--debug", "Enable debug mode", false)
   .helpOption("-h, --help", "Display help for command");
 
 program.parse(process.argv);
@@ -33,6 +35,10 @@ const main = async (): Promise<void> => {
 
   // Validate model option
   const options = program.opts();
+
+  if (options.debug) {
+    debug.enable("gpt4all");
+  }
 
   if (options.reset) {
     const nomicPath = join(homedir(), ".nomic");
