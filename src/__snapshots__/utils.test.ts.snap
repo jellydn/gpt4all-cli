@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`formatCodeBlocks > should format code blocks in markdown 1`] = `
+"Some text
+
+\`\`\`javascript
+console.log(\\"hello world\\");
+\`\`\`
+
+More text
+"
+`;
+
+exports[`formatCodeBlocks > should format code blocks with different languages 1`] = `
+"\`\`\`typescript
+const x: number = 42;
+\`\`\`
+"
+`;
+
+exports[`formatCodeBlocks > should format code blocks with inline code 1`] = `
+"\`\`\`javascript
+const x = \`hello \${name}\`;
+\`\`\`
+"
+`;
+
+exports[`formatCodeBlocks > should format code blocks with leading whitespace 1`] = `
+"\`\`\`javascript
+const x = [1, 2, 3];
+\`\`\`
+"
+`;
+
+exports[`formatCodeBlocks > should format code blocks with options 1`] = `
+"\`\`\`javascript
+const x = [1, 2, 3];
+\`\`\`
+"
+`;
+
+exports[`formatCodeBlocks > should format code blocks with trailing whitespace 1`] = `
+"\`\`\`javascript
+const x = [1, 2, 3];
+\`\`\`
+"
+`;
+
+exports[`formatCodeBlocks > should not format text without code blocks 1`] = `"Some text without code blocks"`;

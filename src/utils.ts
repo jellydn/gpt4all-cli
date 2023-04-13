@@ -1,5 +1,6 @@
 import path from "path";
 import fs from "fs";
+import prettier from "prettier";
 
 /**
  * Reset the GPT4All data model.
@@ -14,12 +15,16 @@ export function reset(nomicDir: string) {
   });
 }
 
-// TODO: add unit test for format response
 /**
- * codeFomatter.
+ * formatCodeBlocks.
  *
- * @param {string} content
+ * @param {string} text
  */
-export function codeFomatter(content: string) {
-  return content.replace(/```/g, "``````");
+export function formatCodeBlocks(text: string) {
+  // only format text if it contains a code block
+  if (text.includes("```")) {
+    return prettier.format(text, { parser: "markdown" });
+  }
+
+  return text;
 }

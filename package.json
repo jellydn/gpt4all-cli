@@ -30,6 +30,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm",
     "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "package-check": "package-check"
   },
   "dependencies": {
@@ -37,14 +39,17 @@
     "consola": "3.0.2",
     "debug": "4.3.4",
     "gpt4all": "github:jellydn/gpt4all-ts#feature/add-debug-flag",
-    "ora": "6.3.0"
+    "ora": "6.3.0",
+    "prettier": "2.8.7"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
     "@types/debug": "4.1.7",
     "@types/node": "18.15.11",
+    "@types/prettier": "2.7.2",
     "tsup": "6.7.0",
     "tsx": "3.12.6",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "vitest": "^0.30.1"
   }
 }
