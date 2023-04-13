@@ -8,7 +8,7 @@ dependencies:
     specifier: 3.0.2
     version: 3.0.2
   debug:
-    specifier: ^4.3.4
+    specifier: 4.3.4
     version: 4.3.4
   gpt4all:
     specifier: github:jellydn/gpt4all-ts#feature/add-debug-flag
@@ -22,7 +22,7 @@ devDependencies:
     specifier: 0.2.2
     version: 0.2.2
   '@types/debug':
-    specifier: ^4.1.7
+    specifier: 4.1.7
     version: 4.1.7
   '@types/node':
     specifier: 18.15.11
