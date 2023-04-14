@@ -15,10 +15,10 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js"
     }
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "bin": {
     "gpt4all": "./dist/index.js"
@@ -28,18 +28,18 @@
     "/dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm",
-    "dev": "tsx src/index.ts",
-    "test": "vitest run",
-    "test:ui": "vitest --ui",
+    "build": "tsup src/index.ts --format esm --clean",
     "coverage": "vitest run --coverage",
-    "package-check": "package-check"
+    "dev": "tsx src/index.ts",
+    "package-check": "package-check",
+    "test": "vitest run",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "commander": "10.0.0",
     "consola": "3.0.2",
     "debug": "4.3.4",
-    "gpt4all-ts-client": "^0.1.0",
+    "gpt4all-ts-client": "^0.2.0",
     "ora": "6.3.0",
     "prettier": "2.8.7"
   },

@@ -11,8 +11,8 @@ dependencies:
     specifier: 4.3.4
     version: 4.3.4
   gpt4all-ts-client:
-    specifier: ^0.1.0
-    version: 0.1.0
+    specifier: ^0.2.0
+    version: 0.2.0
   ora:
     specifier: 6.3.0
     version: 6.3.0
@@ -984,8 +984,9 @@ packages:
       responselike: 3.0.0
     dev: false
 
-  /gpt4all-ts-client@0.1.0:
-    resolution: {integrity: sha512-UmzIWumvRsUY7RTVSh7qhMp869cShrxEDixqRqx/syqXVfoqANY6IQUAR5I06nb22JA5GwKIsIbKdrRObTvvhw==}
+  /gpt4all-ts-client@0.2.0:
+    resolution: {integrity: sha512-mt0PkoqU+5LXpfBNI1biy6hB74ThzuPDCpbe0esod7RalO7QwS8wKB5s6poslwHdwzbBSStnhgCJJbSSTl6WBA==}
+    engines: {node: '>=14.0.0'}
     dependencies:
       os: 0.1.2
       cli-progress: 3.12.0
