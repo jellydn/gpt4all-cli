@@ -11,7 +11,7 @@ dependencies:
     specifier: 4.3.4
     version: 4.3.4
   gpt4all-ts-client:
-    specifier: ^0.2.0
+    specifier: 0.2.0
     version: 0.2.0
   ora:
     specifier: 6.3.0
@@ -34,10 +34,10 @@ devDependencies:
     specifier: 2.7.2
     version: 2.7.2
   '@vitest/coverage-c8':
-    specifier: ^0.30.1
+    specifier: 0.30.1
     version: 0.30.1(vitest@0.30.1)
   '@vitest/ui':
-    specifier: ^0.30.1
+    specifier: 0.30.1
     version: 0.30.1
   tsup:
     specifier: 6.7.0
@@ -49,7 +49,7 @@ devDependencies:
     specifier: 5.0.4
     version: 5.0.4
   vitest:
-    specifier: ^0.30.1
+    specifier: 0.30.1
     version: 0.30.1(@vitest/ui@0.30.1)
 
 packages:
