@@ -89,7 +89,7 @@ const main = async (): Promise<void> => {
   }
 
   // Instantiate GPT4All with default or custom settings
-  const gpt4all = gptFactory(model, true);
+  const gpt4all = gptFactory(model);
   consola.start(`Initialize and download ${model} model if missing ...`);
   await gpt4all.init();
   await gpt4all.open();
