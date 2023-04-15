@@ -36,7 +36,7 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "commander": "10.0.0",
+    "commander": "10.0.1",
     "consola": "3.0.2",
     "debug": "4.3.4",
     "gpt4all-ts-client": "0.2.1",
