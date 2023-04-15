@@ -7,8 +7,8 @@ import { join } from "path";
 import { homedir } from "os";
 import debug from "debug";
 
-import { formatCodeBlocks, reset } from "./utils";
-import { gptFactory } from "./lib/gpt-factory";
+import { formatCodeBlocks, reset } from "./utils.js";
+import { gptFactory } from "./lib/gpt-factory.js";
 import { version } from "../package.json";
 
 const program = new Command();

@@ -24,6 +24,9 @@ devDependencies:
   '@skypack/package-check':
     specifier: 0.2.2
     version: 0.2.2
+  '@total-typescript/shoehorn':
+    specifier: ^0.1.0
+    version: 0.1.0
   '@types/debug':
     specifier: 4.1.7
     version: 4.1.7
@@ -360,6 +363,10 @@ packages:
     dependencies:
       defer-to-connect: 2.0.1
     dev: false
+
+  /@total-typescript/shoehorn@0.1.0:
+    resolution: {integrity: sha512-XKig6hXxWnUh0fsW3LR2vxpxwLlPFokfOSR0riHKA9uXvdHDfwOOPdAOi4U/YNKLmgYUu/plUfnF3yiAAz1+Zg==}
+    dev: true
 
   /@types/chai-subset@1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}

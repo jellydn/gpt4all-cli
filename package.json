@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
+    "@total-typescript/shoehorn": "^0.1.0",
     "@types/debug": "4.1.7",
     "@types/node": "18.15.11",
     "@types/prettier": "2.7.2",

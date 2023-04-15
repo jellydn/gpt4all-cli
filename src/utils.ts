@@ -7,12 +7,17 @@ import prettier from "prettier";
  */
 export function reset(nomicDir: string) {
   const files = fs.readdirSync(nomicDir);
+  const remainingFiles: string[] = [];
   files.forEach((file) => {
     // remove all the files on ~/.nomic/ except ~/.nomic/gpt4all
-    if (file !== "gpt4all") {
+    if (file !== "gpt4all" && file !== "gpt4all.exe") {
       fs.rmSync(path.join(nomicDir, file), { recursive: true });
+    } else {
+      remainingFiles.push(file);
     }
   });
+
+  return remainingFiles;
 }
 
 /**
