@@ -9,8 +9,8 @@ dependencies:
     specifier: 11.0.0
     version: 11.0.0
   consola:
-    specifier: 3.1.0
-    version: 3.1.0
+    specifier: 3.2.1
+    version: 3.2.1
   debug:
     specifier: 4.3.4
     version: 4.3.4
@@ -944,8 +944,8 @@ packages:
       well-known-symbols: 2.0.0
     dev: true
 
-  /consola@3.1.0:
-    resolution: {integrity: sha512-rrrJE6rP0qzl/Srg+C9x/AE5Kxfux7reVm1Wh0wCjuXvih6DqZgqDZe8auTD28fzJ9TF0mHlSDrPpWlujQRo1Q==}
+  /consola@3.2.1:
+    resolution: {integrity: sha512-p4cjcr/NHr2pbmXcTBcdNwIWEyQIzavKkZt6d0rDPQXta+oilM9j9Folao2REulksBZhYX39vF+HlIm7QRTeWA==}
     dev: false
 
   /convert-source-map@1.9.0:
