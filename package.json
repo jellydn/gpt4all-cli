@@ -49,12 +49,12 @@
     "@types/debug": "4.1.8",
     "@types/node": "20.4.0",
     "@types/prettier": "2.7.3",
-    "@vitest/coverage-c8": "0.32.4",
-    "@vitest/ui": "0.32.4",
+    "@vitest/coverage-c8": "0.33.0",
+    "@vitest/ui": "0.33.0",
     "tsup": "7.1.0",
     "tsx": "3.12.7",
     "typescript": "5.1.6",
-    "vitest": "0.32.4"
+    "vitest": "0.33.0"
   },
   "engines": {
     "node": ">=16.0.0"
