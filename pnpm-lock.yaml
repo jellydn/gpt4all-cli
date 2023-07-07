@@ -15,8 +15,8 @@ dependencies:
     specifier: 4.3.4
     version: 4.3.4
   gpt4all-ts-client:
-    specifier: 0.2.1
-    version: 0.2.1
+    specifier: 0.3.0
+    version: 0.3.0
   ora:
     specifier: 6.3.1
     version: 6.3.1
@@ -1210,9 +1210,9 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /got@12.6.1:
-    resolution: {integrity: sha512-mThBblvlAF1d4O5oqyvN+ZxLAYwIJK7bpMxgYqPD9okW0C3qm5FFn7k811QrcuEBwaogR3ngOFoCfs6mRv7teQ==}
-    engines: {node: '>=14.16'}
+  /got@13.0.0:
+    resolution: {integrity: sha512-XfBk1CxOOScDcMr9O1yKkNaQyy865NbYs+F7dr4H0LZMVgCj2Le59k6PqbNHoL5ToeaEQUYh6c6yMfVcc6SJxA==}
+    engines: {node: '>=16'}
     dependencies:
       '@sindresorhus/is': 5.4.1
       '@szmarczak/http-timer': 5.0.1
@@ -1227,14 +1227,14 @@ packages:
       responselike: 3.0.0
     dev: false
 
-  /gpt4all-ts-client@0.2.1:
-    resolution: {integrity: sha512-oyqUA0CdVssRBdCXaHt3BdAT+IcNBBWapdYxPED1qXjmcqsvZEJDJkg/UDQI41H5YLJAqK20UMslzS8Act2RGg==}
-    engines: {node: '>=14.0.0'}
+  /gpt4all-ts-client@0.3.0:
+    resolution: {integrity: sha512-1tjgj/Sc81mkHKbnB3YQLoMI9eSdWPqipIdfxD2AYlh2VTpafQfgL7aV9mqUlcwp7tly+d71zG/kaYhHofOIEQ==}
+    engines: {node: '>=16.0.0'}
     dependencies:
       os: 0.1.2
       cli-progress: 3.12.0
       debug: 4.3.4
-      got: 12.6.1
+      got: 13.0.0
     transitivePeerDependencies:
       - supports-color
     dev: false
