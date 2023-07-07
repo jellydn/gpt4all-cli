@@ -34,54 +34,54 @@ describe("reset", () => {
 });
 
 describe("formatCodeBlocks", () => {
-  it("should format code blocks in markdown", () => {
+  it("should format code blocks in markdown", async () => {
     const input =
       "Some text\n\n```javascript\nconsole.log('hello world');\n```\n\nMore text";
     const expectedOutput =
       'Some text\n\n```javascript\nconsole.log("hello world");\n```\n\nMore text\n';
-    expect(formatCodeBlocks(input)).toEqual(expectedOutput);
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toEqual(expectedOutput);
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 
-  it("should not format text without code blocks", () => {
+  it("should not format text without code blocks", async () => {
     const input = "Some text without code blocks";
-    expect(formatCodeBlocks(input)).toEqual(input);
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toEqual(input);
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 
-  it("should format code blocks with different languages", () => {
+  it("should format code blocks with different languages", async () => {
     const input = "```typescript\nconst x: number = 42;\n```";
     const expectedOutput = "```typescript\nconst x: number = 42;\n```\n";
-    expect(formatCodeBlocks(input)).toEqual(expectedOutput);
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toEqual(expectedOutput);
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 
-  it("should format code blocks with options", () => {
+  it("should format code blocks with options", async () => {
     const input = "```javascript\nconst x = [1,2,3];\n```\n";
     const expectedOutput = "```javascript\nconst x = [1, 2, 3];\n```\n";
-    expect(formatCodeBlocks(input)).toEqual(expectedOutput);
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toEqual(expectedOutput);
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 
-  it("should format code blocks with trailing whitespace", () => {
+  it("should format code blocks with trailing whitespace", async () => {
     const input = "```javascript\nconst x = [1,2,3];\n  \n```";
     const expectedOutput = "```javascript\nconst x = [1, 2, 3];\n```\n";
-    expect(formatCodeBlocks(input)).toEqual(expectedOutput);
+    expect(await formatCodeBlocks(input)).toEqual(expectedOutput);
 
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 
-  it("should format code blocks with leading whitespace", () => {
+  it("should format code blocks with leading whitespace", async () => {
     const input = "  ```javascript\n  const x = [1,2,3];\n  ```";
     const expectedOutput = "```javascript\nconst x = [1, 2, 3];\n```\n";
-    expect(formatCodeBlocks(input)).toEqual(expectedOutput);
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toEqual(expectedOutput);
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 
-  it("should format code blocks with inline code", () => {
+  it("should format code blocks with inline code", async () => {
     const input = "```javascript\nconst x = `hello ${name}`;\n```\n";
     const expectedOutput = "```javascript\nconst x = `hello ${name}`;\n```\n";
-    expect(formatCodeBlocks(input)).toEqual(expectedOutput);
-    expect(formatCodeBlocks(input)).toMatchSnapshot();
+    expect(await formatCodeBlocks(input)).toEqual(expectedOutput);
+    expect(await formatCodeBlocks(input)).toMatchSnapshot();
   });
 });

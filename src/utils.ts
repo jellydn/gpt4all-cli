@@ -25,7 +25,7 @@ export function reset(nomicDir: string) {
  *
  * @param {string} text
  */
-export function formatCodeBlocks(text: string) {
+export async function formatCodeBlocks(text: string) {
   // only format text if it contains a code block
   if (text.includes("```")) {
     return prettier.format(text, { parser: "markdown" });

@@ -111,7 +111,7 @@ const main = async (): Promise<void> => {
       const spinner = ora("Generating response...").start();
       const response = await gpt4all.prompt(prompt);
       spinner.stop();
-      consola.warn(formatCodeBlocks(response));
+      consola.warn(await formatCodeBlocks(response));
     }
   }
 
