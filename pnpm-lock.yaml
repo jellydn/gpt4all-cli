@@ -35,8 +35,8 @@ devDependencies:
     specifier: 4.1.8
     version: 4.1.8
   '@types/node':
-    specifier: 20.4.6
-    version: 20.4.6
+    specifier: 20.4.7
+    version: 20.4.7
   '@types/prettier':
     specifier: 2.7.3
     version: 2.7.3
@@ -617,8 +617,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
 
-  /@types/node@20.4.6:
-    resolution: {integrity: sha512-q0RkvNgMweWWIvSMDiXhflGUKMdIxBo2M2tYM/0kEGDueQByFzK4KZAgu5YHGFNxziTlppNpTIBcqHQAxlfHdA==}
+  /@types/node@20.4.7:
+    resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==}
     dev: true
 
   /@types/prettier@2.7.3:
@@ -2058,7 +2058,7 @@ packages:
       convert-source-map: 1.9.0
     dev: true
 
-  /vite-node@0.34.1(@types/node@20.4.6):
+  /vite-node@0.34.1(@types/node@20.4.7):
     resolution: {integrity: sha512-odAZAL9xFMuAg8aWd7nSPT+hU8u2r9gU3LRm9QKjxBEF2rRdWpMuqkrkjvyVQEdNFiBctqr2Gg4uJYizm5Le6w==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -2068,7 +2068,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.7(@types/node@20.4.6)
+      vite: 4.4.7(@types/node@20.4.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2080,7 +2080,7 @@ packages:
       - terser
     dev: true
 
-  /vite@4.4.7(@types/node@20.4.6):
+  /vite@4.4.7(@types/node@20.4.7):
     resolution: {integrity: sha512-6pYf9QJ1mHylfVh39HpuSfMPojPSKVxZvnclX1K1FyZ1PXDOcLBibdq5t1qxJSnL63ca8Wf4zts6mD8u8oc9Fw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2108,7 +2108,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.4.6
+      '@types/node': 20.4.7
       esbuild: 0.18.17
       postcss: 8.4.27
       rollup: 3.27.0
@@ -2149,7 +2149,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
-      '@types/node': 20.4.6
+      '@types/node': 20.4.7
       '@vitest/expect': 0.34.1
       '@vitest/runner': 0.34.1
       '@vitest/snapshot': 0.34.1
@@ -2169,8 +2169,8 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.7.0
-      vite: 4.4.7(@types/node@20.4.6)
-      vite-node: 0.34.1(@types/node@20.4.6)
+      vite: 4.4.7(@types/node@20.4.7)
+      vite-node: 0.34.1(@types/node@20.4.7)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
