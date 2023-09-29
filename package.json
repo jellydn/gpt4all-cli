@@ -47,14 +47,14 @@
     "@skypack/package-check": "0.2.2",
     "@total-typescript/shoehorn": "0.1.1",
     "@types/debug": "4.1.9",
-    "@types/node": "20.7.1",
+    "@types/node": "20.7.2",
     "@types/prettier": "2.7.3",
     "@vitest/coverage-c8": "0.33.0",
-    "@vitest/ui": "0.34.5",
+    "@vitest/ui": "0.34.6",
     "tsup": "7.2.0",
     "tsx": "3.13.0",
     "typescript": "5.2.2",
-    "vitest": "0.34.5"
+    "vitest": "0.34.6"
   },
   "engines": {
     "node": ">=16.20.0"
