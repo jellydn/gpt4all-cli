@@ -41,7 +41,7 @@
     "debug": "4.3.4",
     "gpt4all-ts-client": "0.3.0",
     "ora": "7.0.1",
-    "prettier": "3.0.3"
+    "prettier": "3.1.0"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
