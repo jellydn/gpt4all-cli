@@ -41,7 +41,7 @@
     "debug": "4.3.4",
     "gpt4all-ts-client": "0.3.0",
     "ora": "7.0.1",
-    "prettier": "3.1.1"
+    "prettier": "3.2.1"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
@@ -50,11 +50,11 @@
     "@types/node": "20.11.0",
     "@types/prettier": "2.7.3",
     "@vitest/coverage-c8": "0.33.0",
-    "@vitest/ui": "1.1.3",
+    "@vitest/ui": "1.2.0",
     "tsup": "8.0.1",
     "tsx": "4.7.0",
     "typescript": "5.3.3",
-    "vitest": "1.1.3"
+    "vitest": "1.2.0"
   },
   "engines": {
     "node": ">=16.20.0"
