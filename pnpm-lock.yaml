@@ -12,8 +12,8 @@ dependencies:
     specifier: 3.2.3
     version: 3.2.3
   debug:
-    specifier: 4.3.4
-    version: 4.3.4
+    specifier: 4.3.5
+    version: 4.3.5
   gpt4all-ts-client:
     specifier: 0.3.0
     version: 0.3.0
@@ -1083,8 +1083,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+  /debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1411,7 +1411,7 @@ packages:
     dependencies:
       os: 0.1.2
       cli-progress: 3.12.0
-      debug: 4.3.4
+      debug: 4.3.5
       got: 13.0.0
     transitivePeerDependencies:
       - supports-color
@@ -2259,7 +2259,7 @@ packages:
       bundle-require: 4.1.0(esbuild@0.19.12)
       cac: 6.7.14
       chokidar: 3.6.0
-      debug: 4.3.4
+      debug: 4.3.5
       esbuild: 0.19.12
       execa: 5.1.1
       globby: 11.1.0
@@ -2321,7 +2321,7 @@ packages:
     hasBin: true
     dependencies:
       cac: 6.7.14
-      debug: 4.3.4
+      debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
       vite: 5.2.11(@types/node@20.12.13)
@@ -2406,7 +2406,7 @@ packages:
       '@vitest/utils': 1.6.0
       acorn-walk: 8.3.2
       chai: 4.4.1
-      debug: 4.3.4
+      debug: 4.3.5
       execa: 8.0.1
       local-pkg: 0.5.0
       magic-string: 0.30.10
