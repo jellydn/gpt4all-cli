@@ -21,8 +21,8 @@ dependencies:
     specifier: 8.0.1
     version: 8.0.1
   prettier:
-    specifier: 3.2.5
-    version: 3.2.5
+    specifier: 3.3.0
+    version: 3.3.0
 
 devDependencies:
   '@skypack/package-check':
@@ -761,7 +761,7 @@ packages:
     resolution: {integrity: sha512-mFMBfMOz8QxhYVbuINtswBp9VL2b4Y0QqYHwqLz3YbgtfAcat2Dl6Y1o4e22S/OVE6Ebl9m7wWiMT2lSbAs1wA==}
     deprecated: This is a stub types definition. prettier provides its own type definitions, so you do not need this installed.
     dependencies:
-      prettier: 3.2.5
+      prettier: 3.3.0
     dev: true
 
   /@vitest/coverage-c8@0.33.0(vitest@1.6.0):
@@ -1913,8 +1913,8 @@ packages:
       source-map-js: 1.2.0
     dev: true
 
-  /prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  /prettier@3.3.0:
+    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
     engines: {node: '>=14'}
     hasBin: true
 
