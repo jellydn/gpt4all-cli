@@ -41,13 +41,13 @@
     "debug": "4.3.5",
     "gpt4all-ts-client": "0.3.0",
     "ora": "8.0.1",
-    "prettier": "3.3.0"
+    "prettier": "3.3.1"
   },
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
     "@total-typescript/shoehorn": "0.1.2",
     "@types/debug": "4.1.12",
-    "@types/node": "20.14.1",
+    "@types/node": "20.14.2",
     "@types/prettier": "3.0.0",
     "@vitest/coverage-c8": "0.33.0",
     "@vitest/ui": "1.6.0",
