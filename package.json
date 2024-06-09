@@ -52,7 +52,7 @@
     "@vitest/coverage-c8": "0.33.0",
     "@vitest/ui": "1.6.0",
     "tsup": "8.1.0",
-    "tsx": "4.14.0",
+    "tsx": "4.14.1",
     "typescript": "5.4.5",
     "vitest": "1.6.0"
   },
