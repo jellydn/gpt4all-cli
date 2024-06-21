@@ -50,8 +50,8 @@ devDependencies:
     specifier: 8.1.0
     version: 8.1.0(typescript@5.5.2)
   tsx:
-    specifier: 4.15.6
-    version: 4.15.6
+    specifier: 4.15.7
+    version: 4.15.7
   typescript:
     specifier: 5.5.2
     version: 5.5.2
@@ -2040,8 +2040,8 @@ packages:
       - ts-node
     dev: true
 
-  /tsx@4.15.6:
-    resolution: {integrity: sha512-is0VQQlfNZRHEuSSTKA6m4xw74IU4AizmuB6lAYLRt9XtuyeQnyJYexhNZOPCB59SqC4JzmSzPnHGBXxf3k0hA==}
+  /tsx@4.15.7:
+    resolution: {integrity: sha512-u3H0iSFDZM3za+VxkZ1kywdCeHCn+8/qHQS1MNoO2sONDgD95HlWtt8aB23OzeTmFP9IU4/8bZUdg58Uu5J4cg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
