@@ -38,7 +38,7 @@
   "dependencies": {
     "commander": "12.1.0",
     "consola": "3.2.3",
-    "debug": "4.3.6",
+    "debug": "4.3.7",
     "gpt4all-ts-client": "0.3.0",
     "ora": "8.1.0",
     "prettier": "3.3.3"
