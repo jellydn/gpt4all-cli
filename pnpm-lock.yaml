@@ -48,10 +48,10 @@ devDependencies:
     version: 1.6.0(vitest@1.6.0)
   tsup:
     specifier: 8.3.5
-    version: 8.3.5(tsx@4.19.1)(typescript@5.6.3)
+    version: 8.3.5(tsx@4.19.2)(typescript@5.6.3)
   tsx:
-    specifier: 4.19.1
-    version: 4.19.1
+    specifier: 4.19.2
+    version: 4.19.2
   typescript:
     specifier: 5.6.3
     version: 5.6.3
@@ -2069,7 +2069,7 @@ packages:
       pathe: 1.1.2
     dev: true
 
-  /postcss-load-config@6.0.1(tsx@4.19.1):
+  /postcss-load-config@6.0.1(tsx@4.19.2):
     resolution: {integrity: sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==}
     engines: {node: '>= 18'}
     peerDependencies:
@@ -2088,7 +2088,7 @@ packages:
         optional: true
     dependencies:
       lilconfig: 3.1.2
-      tsx: 4.19.1
+      tsx: 4.19.2
     dev: true
 
   /postcss@8.4.47:
@@ -2424,7 +2424,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup@8.3.5(tsx@4.19.1)(typescript@5.6.3):
+  /tsup@8.3.5(tsx@4.19.2)(typescript@5.6.3):
     resolution: {integrity: sha512-Tunf6r6m6tnZsG9GYWndg0z8dEV7fD733VBFzFJ5Vcm1FtlXB8xBD/rtrBi2a3YKEV7hHtxiZtW5EAVADoe1pA==}
     engines: {node: '>=18'}
     hasBin: true
@@ -2451,7 +2451,7 @@ packages:
       esbuild: 0.24.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(tsx@4.19.1)
+      postcss-load-config: 6.0.1(tsx@4.19.2)
       resolve-from: 5.0.0
       rollup: 4.24.0
       source-map: 0.8.0-beta.0
@@ -2467,8 +2467,8 @@ packages:
       - yaml
     dev: true
 
-  /tsx@4.19.1:
-    resolution: {integrity: sha512-0flMz1lh74BR4wOvBjuh9olbnwqCPc35OOlfyzHba0Dc+QNUeWX/Gq2YTbnwcWPO3BMd8fkzRVrHcsR+a7z7rA==}
+  /tsx@4.19.2:
+    resolution: {integrity: sha512-pOUl6Vo2LUq/bSa8S5q7b91cgNSjctn9ugq/+Mvow99qW6x/UZYwzxy/3NmqoT66eHYfCVvFvACC58UBPFf28g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
