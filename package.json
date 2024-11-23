@@ -50,11 +50,11 @@
     "@types/node": "20.17.7",
     "@types/prettier": "3.0.0",
     "@vitest/coverage-c8": "0.33.0",
-    "@vitest/ui": "1.6.0",
+    "@vitest/ui": "2.1.5",
     "tsup": "8.3.5",
     "tsx": "4.19.2",
     "typescript": "5.7.2",
-    "vitest": "1.6.0"
+    "vitest": "2.1.5"
   },
   "engines": {
     "node": ">=16.20.0"
