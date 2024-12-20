@@ -9,8 +9,8 @@ dependencies:
     specifier: 12.1.0
     version: 12.1.0
   consola:
-    specifier: 3.2.3
-    version: 3.2.3
+    specifier: 3.3.0
+    version: 3.3.0
   debug:
     specifier: 4.4.0
     version: 4.4.0
@@ -1249,8 +1249,8 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
-  /consola@3.2.3:
-    resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
+  /consola@3.3.0:
+    resolution: {integrity: sha512-kxltocVQCwQNFvw40dlVRYeAkAvtYjMFZYNlOcsF5wExPpGwPxMwgx4IfDJvBRPtBpnQwItd5WkTaR0ZwT/TmQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   /convert-source-map@2.0.0:
@@ -2228,7 +2228,7 @@ packages:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
       chokidar: 4.0.1
-      consola: 3.2.3
+      consola: 3.3.0
       debug: 4.4.0
       esbuild: 0.24.0
       joycon: 3.1.1
