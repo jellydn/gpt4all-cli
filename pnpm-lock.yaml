@@ -48,13 +48,13 @@ devDependencies:
     version: 2.1.8(vitest@2.1.8)
   tsup:
     specifier: 8.3.5
-    version: 8.3.5(tsx@4.19.2)(typescript@5.7.2)
+    version: 8.3.5(tsx@4.19.2)(typescript@5.7.3)
   tsx:
     specifier: 4.19.2
     version: 4.19.2
   typescript:
-    specifier: 5.7.2
-    version: 5.7.2
+    specifier: 5.7.3
+    version: 5.7.3
   vitest:
     specifier: 2.1.8
     version: 2.1.8(@types/node@22.10.5)(@vitest/ui@2.1.8)
@@ -2216,7 +2216,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup@8.3.5(tsx@4.19.2)(typescript@5.7.2):
+  /tsup@8.3.5(tsx@4.19.2)(typescript@5.7.3):
     resolution: {integrity: sha512-Tunf6r6m6tnZsG9GYWndg0z8dEV7fD733VBFzFJ5Vcm1FtlXB8xBD/rtrBi2a3YKEV7hHtxiZtW5EAVADoe1pA==}
     engines: {node: '>=18'}
     hasBin: true
@@ -2251,7 +2251,7 @@ packages:
       tinyexec: 0.3.2
       tinyglobby: 0.2.10
       tree-kill: 1.2.2
-      typescript: 5.7.2
+      typescript: 5.7.3
     transitivePeerDependencies:
       - jiti
       - supports-color
@@ -2270,8 +2270,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /typescript@5.7.2:
-    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+  /typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
